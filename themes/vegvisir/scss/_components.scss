@@ -63,7 +63,7 @@ Components
 
 .Brand {
     display: block;
-    background-color: var(--sidebar-background);
+    background-color: transparent;
     padding: 2em 1em;
     font-size: var(--type-size-4);
     text-shadow: none;
@@ -222,6 +222,7 @@ Components
 
     a {
         text-decoration: none;
+        color: var(--pink);
     }
 
     .ModifiedDate {
@@ -333,6 +334,9 @@ Components
 }
 
 .TableOfContentsContainer {
+    position: fixed;
+    top: 0;
+    right: 10px;
     float: right;
     min-width: 300px;
     max-width: 25%;
@@ -366,6 +370,7 @@ ul.TableOfContents {
         text-decoration: none;
         display: block;
         padding: 0.2em 0 0.2em 0.75em;
+        color: var(--blue);
     }
 
     .TableOfContents {
@@ -390,13 +395,14 @@ ul.TableOfContents {
             display: inline-block;
             padding: 5px 0px;
             background-color: #fff;
+            color: var(--pink);
             border: none !important;
             border-radius: 0 !important;;
         }
 
         > a:hover,
         > a:focus {
-            color: #FF3300;
+            color: var(--blue);
         }
     }
 
